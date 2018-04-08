@@ -52,17 +52,21 @@ Shader "Custom/WaterSurfaceShader"
 		//The wave function
 		float3 getWavePos(float3 pos)
 		{			
-			pos.y = 0.0;
+			//pos.y = 0.0;
 
 			float waveType = pos.z;
 
 			if(_MakeWave == 0)
 			{
-				pos.y += sin((_WaterTime * _WaterSpeed + waveType) / _WaterDistance) * _WaterScale;
+				pos.y += (sin((_WaterTime * _WaterSpeed + waveType ) / _WaterDistance) * _WaterScale);
+				//pos.y += (sin((_WaterTime * _WaterSpeed + waveType + pos.x) / _WaterDistance) * _WaterScale);
+				//pos.y += (sin((_WaterTime * _WaterSpeed + waveType * pos.x) / _WaterDistance) * _WaterScale)/100;
+				//TODO connect watercontroller with shader through Shader.SetGlobalBuffer
+				
 			}
 
 			//Add noise
-			//pos.y += tex2Dlod(_NoiseTex, float4(pos.x, pos.z + sin(_WaterTime * 0.1), 0.0, 0.0) * _WaterNoiseWalk).a * _WaterNoiseStrength;
+			//pos.y += (tex2Dlod(_NoiseTex, float4(pos.x, pos.z + sin(_WaterTime * 0.1), 0.0, 0.0) * _WaterNoiseWalk).a * _WaterNoiseStrength)/2;
 
 			return pos;
 		}
