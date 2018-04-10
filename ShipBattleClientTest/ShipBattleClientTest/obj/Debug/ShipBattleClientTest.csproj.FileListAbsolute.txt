@@ -1,0 +1,11 @@
+D:\projekt_dns_kino\ShipBattleClientTest\ShipBattleClientTest\bin\Debug\ShipBattleClientTest.exe
+D:\projekt_dns_kino\ShipBattleClientTest\ShipBattleClientTest\bin\Debug\ShipBattleClientTest.pdb
+D:\projekt_dns_kino\ShipBattleClientTest\ShipBattleClientTest\obj\Debug\ShipBattleClientTest.csprojResolveAssemblyReference.cache
+D:\projekt_dns_kino\ShipBattleClientTest\ShipBattleClientTest\obj\Debug\ShipBattleClientTest.Properties.Resources.resources
+D:\projekt_dns_kino\ShipBattleClientTest\ShipBattleClientTest\obj\Debug\ShipBattleClientTest.csproj.GenerateResource.cache
+D:\projekt_dns_kino\ShipBattleClientTest\ShipBattleClientTest\obj\Debug\ShipBattleClientTest.csproj.CoreCompileInputs.cache
+D:\projekt_dns_kino\ShipBattleClientTest\ShipBattleClientTest\obj\Debug\ShipBattleClientTest.exe
+D:\projekt_dns_kino\ShipBattleClientTest\ShipBattleClientTest\obj\Debug\ShipBattleClientTest.pdb
+D:\projekt_dns_kino\ShipBattleClientTest\Debug\ShipBattleClientTest.exe
+D:\projekt_dns_kino\ShipBattleClientTest\Debug\ShipBattleClientTest.pdb
+D:\projekt_dns_kino\ShipBattleClientTest\ShipBattleClientTest\obj\Debug\ShipBattleClientTest.Form1.resources

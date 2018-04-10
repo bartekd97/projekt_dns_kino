@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Base64Encoder.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\BitStream.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\CCRakNetSlidingWindow.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\CCRakNetUDT.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\CheckSum.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\CloudClient.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\CloudCommon.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\CloudServer.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\CommandParserInterface.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\ConnectionGraph2.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\ConsoleServer.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DataCompressor.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DirectoryDeltaTransfer.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DR_SHA1.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_BytePool.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_ByteQueue.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_HuffmanEncodingTree.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_Table.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DynDNS.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\EmailSender.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\EpochTimeToString.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\FileList.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\FileListTransfer.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\FileOperations.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\FormatString.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\FullyConnectedMesh2.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Getche.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Gets.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\GetTime.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\gettimeofday.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\GridSectorizer.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\HTTPConnection.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\HTTPConnection2.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\IncrementalReadInterface.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Itoa.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\LinuxStrings.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\LocklessTypes.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\LogCommandParser.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\MessageFilter.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NatPunchthroughClient.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NatPunchthroughServer.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NatTypeDetectionClient.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NatTypeDetectionCommon.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NatTypeDetectionServer.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NetworkIDManager.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NetworkIDObject.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PacketConsoleLogger.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PacketFileLogger.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PacketizedTCP.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PacketLogger.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PacketOutputWindowLogger.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PluginInterface2.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PS4Includes.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Rackspace.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakMemoryOverride.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetCommandParser.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetSocket.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetSocket2.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetSocket2_360_720.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetSocket2_Berkley.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetSocket2_Berkley_NativeClient.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetSocket2_NativeClient.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetSocket2_PS3_PS4.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetSocket2_PS4.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetSocket2_Vita.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetSocket2_WindowsStore8.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetSocket2_Windows_Linux.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetSocket2_Windows_Linux_360.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetStatistics.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetTransport2.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetTypes.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakPeer.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakSleep.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakString.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakThread.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakWString.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Rand.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RandSync.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\ReadyEvent.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RelayPlugin.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\ReliabilityLayer.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\ReplicaManager3.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Router2.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RPC4Plugin.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SecureHandshake.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SendToThread.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SignaledEvent.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SimpleMutex.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SocketLayer.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\StatisticsHistory.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\StringCompressor.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\StringTable.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SuperFastHash.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\TableSerializer.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\TCPInterface.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\TeamBalancer.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\TeamManager.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\TelnetTransport.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\ThreadsafePacketLogger.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\TwoWayAuthentication.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\UDPForwarder.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\UDPProxyClient.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\UDPProxyCoordinator.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\UDPProxyServer.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\VariableDeltaSerializer.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\VariableListDeltaTracker.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\VariadicSQLParser.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\VitaIncludes.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\WSAStartupSingleton.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\_FindFirst.cpp" />
+    <ClCompile Include="..\..\ShipBattleServer\ShipBattleServer\Shared\Utility.cpp" />
+    <ClCompile Include="dllexport.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\AutopatcherPatchContext.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\AutopatcherRepositoryInterface.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Base64Encoder.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\BitStream.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\CCRakNetSlidingWindow.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\CCRakNetUDT.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\CheckSum.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\CloudClient.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\CloudCommon.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\CloudServer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\CommandParserInterface.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\ConnectionGraph2.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\ConsoleServer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DataCompressor.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DirectoryDeltaTransfer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DR_SHA1.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_BinarySearchTree.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_BPlusTree.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_BytePool.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_ByteQueue.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_Hash.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_Heap.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_HuffmanEncodingTree.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_HuffmanEncodingTreeFactory.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_HuffmanEncodingTreeNode.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_LinkedList.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_List.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_Map.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_MemoryPool.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_Multilist.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_OrderedChannelHeap.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_OrderedList.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_Queue.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_QueueLinkedList.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_RangeList.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_Table.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_ThreadsafeAllocatingQueue.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_Tree.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DS_WeightedGraph.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\DynDNS.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\EmailSender.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\EmptyHeader.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\EpochTimeToString.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Export.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\FileList.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\FileListNodeContext.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\FileListTransfer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\FileListTransferCBInterface.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\FileOperations.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\FormatString.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\FullyConnectedMesh2.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Getche.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Gets.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\GetTime.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\gettimeofday.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\GridSectorizer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\HTTPConnection.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\HTTPConnection2.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\IncrementalReadInterface.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\InternalPacket.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Itoa.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Kbhit.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\LinuxStrings.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\LocklessTypes.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\LogCommandParser.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\MessageFilter.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\MessageIdentifiers.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\MTUSize.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NativeFeatureIncludes.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NativeFeatureIncludesOverrides.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NativeTypes.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NatPunchthroughClient.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NatPunchthroughServer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NatTypeDetectionClient.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NatTypeDetectionCommon.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NatTypeDetectionServer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NetworkIDManager.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\NetworkIDObject.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PacketConsoleLogger.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PacketFileLogger.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PacketizedTCP.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PacketLogger.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PacketOutputWindowLogger.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PacketPool.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PacketPriority.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PluginInterface2.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PS3Includes.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\PS4Includes.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Rackspace.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakAlloca.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakAssert.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakMemoryOverride.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetCommandParser.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetDefines.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetDefinesOverrides.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetSmartPtr.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetSocket.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetSocket2.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetStatistics.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetTime.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetTransport2.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetTypes.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNetVersion.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakPeer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakPeerInterface.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakSleep.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakString.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakThread.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakWString.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Rand.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RandSync.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\ReadyEvent.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RefCountedObj.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RelayPlugin.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\ReliabilityLayer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\ReplicaEnums.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\ReplicaManager3.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\Router2.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RPC4Plugin.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SecureHandshake.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SendToThread.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SignaledEvent.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SimpleMutex.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SimpleTCPServer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SingleProducerConsumer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SocketDefines.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SocketIncludes.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SocketLayer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\StatisticsHistory.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\StringCompressor.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\StringTable.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\SuperFastHash.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\TableSerializer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\TCPInterface.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\TeamBalancer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\TeamManager.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\TelnetTransport.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\ThreadPool.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\ThreadsafePacketLogger.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\TransportInterface.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\TwoWayAuthentication.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\UDPForwarder.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\UDPProxyClient.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\UDPProxyCommon.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\UDPProxyCoordinator.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\UDPProxyServer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\VariableDeltaSerializer.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\VariableListDeltaTracker.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\VariadicSQLParser.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\VitaIncludes.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\WindowsIncludes.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\WSAStartupSingleton.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\XBox360Includes.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\_FindFirst.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\Shared\Channels.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\Shared\Enum.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\Shared\include.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\Shared\Struct.h" />
+    <ClInclude Include="..\..\ShipBattleServer\ShipBattleServer\Shared\Utility.h" />
+    <ClInclude Include="dllexport.h" />
+    <ClInclude Include="include.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNet.vcproj" />
+    <None Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNet_vc8.vcproj" />
+    <None Include="..\..\ShipBattleServer\ShipBattleServer\RakNet\RakNet_vc9.vcproj" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{5597C9CB-34B3-4036-BDE7-052E0F46F62E}</ProjectGuid>
+    <RootNamespace>ShipBattleClientNet</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>WS2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>WS2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
