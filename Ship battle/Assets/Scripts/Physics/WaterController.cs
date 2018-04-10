@@ -7,7 +7,6 @@ public class WaterController : MonoBehaviour
     public static WaterController current;
 
     public bool isMoving;
-
     //Wave height and speed
     public float scale = 0.1f;
     public float speed = 1.0f;
