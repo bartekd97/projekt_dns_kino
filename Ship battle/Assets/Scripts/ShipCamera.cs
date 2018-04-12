@@ -11,12 +11,13 @@ public class ShipCamera : MonoBehaviour {
 
     public float posY = 10f;
     public float distance = 70f;
+    public float smoothing = 0.25f;
 
 	void Start () {
 		
 	}
 	
-	void Update () {
+	void FixedUpdate () {
         camParent.Rotate(Vector3.up * Input.GetAxis("Mouse X") * 2f);
 
         posY -= Input.GetAxis("Mouse Y");
@@ -33,7 +34,10 @@ public class ShipCamera : MonoBehaviour {
 
         Vector3 toPosition = camParent.position + (camPosition.position - camParent.position).normalized*distance;
         toPosition.y = Mathf.Max(posY, ocean.GetWaterLevel(toPosition) + 1f);
-        transform.position = transform.position + (toPosition - transform.position) * 0.1f;
+
+        float distDiff = (transform.position - toPosition).magnitude;
+        transform.position = Vector3.LerpUnclamped(transform.position, toPosition, Time.fixedDeltaTime * distDiff * smoothing);
+        //transform.position = transform.position + (toPosition - transform.position) * 1f;
         transform.LookAt( lookAt );
 	}
 }

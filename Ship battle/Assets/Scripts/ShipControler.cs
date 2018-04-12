@@ -12,7 +12,7 @@ public class ShipControler : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
 	}
 	
-	void Update () {
+	void FixedUpdate () {
         if (Input.GetKey(KeyCode.W)){ 
         
             rb.AddRelativeForce(Vector3.forward * 1000);
