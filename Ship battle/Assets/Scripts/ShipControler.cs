@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ShipControler : MonoBehaviour {
 
+    public float TurnForce = 10f;
+
     private Rigidbody rb;
 
 	void Start () {
@@ -13,22 +15,22 @@ public class ShipControler : MonoBehaviour {
 	void Update () {
         if (Input.GetKey(KeyCode.W)){ 
         
-            rb.AddForce(Vector3.right * 1000);
+            rb.AddRelativeForce(Vector3.forward * 1000);
             Debug.Log("W");
         }
         if (Input.GetKey(KeyCode.S))
         {
-            rb.AddForce(Vector3.right * -1000);
+            rb.AddRelativeForce(Vector3.forward * -1000);
             Debug.Log("S");
         }
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddTorque(Vector3.down * Time.deltaTime * 20000);
+            rb.AddRelativeTorque(Vector3.left * Time.deltaTime * 20000 * TurnForce);
             Debug.Log("A");
         }
         if (Input.GetKey(KeyCode.D))
         {
-            rb.AddTorque(Vector3.up * Time.deltaTime * 20000);
+            rb.AddRelativeTorque(Vector3.right * Time.deltaTime * 20000 * TurnForce);
             Debug.Log("D");
         }
     }
