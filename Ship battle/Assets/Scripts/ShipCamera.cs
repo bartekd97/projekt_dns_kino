@@ -36,7 +36,7 @@ public class ShipCamera : MonoBehaviour {
         toPosition.y = Mathf.Max(posY, ocean.GetWaterLevel(toPosition) + 1f);
 
         float distDiff = (transform.position - toPosition).magnitude;
-        transform.position = Vector3.LerpUnclamped(transform.position, toPosition, Time.fixedDeltaTime * distDiff * smoothing);
+        transform.position = Vector3.LerpUnclamped(transform.position, toPosition, Time.fixedDeltaTime * Mathf.Min(distDiff,2f) * smoothing);
         //transform.position = transform.position + (toPosition - transform.position) * 1f;
         transform.LookAt( lookAt );
 	}

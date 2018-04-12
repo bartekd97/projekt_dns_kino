@@ -240,7 +240,7 @@ MonoBehaviour:
   ocean: {fileID: 2047329970}
   posY: 10
   distance: 70
-  smoothing: 0.5
+  smoothing: 1
 --- !u!1 &221557908
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +335,6 @@ GameObject:
   - component: {fileID: 413378515}
   - component: {fileID: 413378516}
   - component: {fileID: 413378517}
-  - component: {fileID: 413378518}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -405,17 +404,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TurnForce: 500
---- !u!75 &413378518
-ConstantForce:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 413378513}
-  m_Enabled: 1
-  m_Force: {x: 0, y: 0, z: 0}
-  m_RelativeForce: {x: 0, y: 0, z: 5000}
-  m_Torque: {x: 0, y: 0, z: 0}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &599476809
 GameObject:
   m_ObjectHideFlags: 0
