@@ -6,7 +6,8 @@ Shader "Custom/WaterSurfaceShader"
 	Properties 
 	{
 		_Color ("Color", Color) = (1,1,1,1)
-		_MainTex("Main Texture", 2D) = "white" {}
+		_Transparency("Transparency", Range(0.0,0.5)) = 0.25
+		_MainTex("Color (RGB) Alpha (A)", 2D) = "white" {}
 		_Glossiness ("Smoothness", Range(0,1)) = 0.5
 		_Metallic ("Metallic", Range(0,1)) = 0.0
 		_NoiseTex("Noise Texture", 2D) = "white" {}
@@ -14,7 +15,7 @@ Shader "Custom/WaterSurfaceShader"
 	
 	SubShader 
 	{
-		Tags { "RenderType"="Opaque" }
+		Tags { "Queue" = "Transparent-2" "RenderType" = "Transparent" }
 		LOD 200
 		
 		CGPROGRAM
@@ -23,7 +24,7 @@ Shader "Custom/WaterSurfaceShader"
 		//- vertex:vert to be able to modify the vertices
 		//- addshadow to make the shadows look correct after modifying the vertices
 		#pragma surface surf Standard vertex:vert addshadow
-
+		#pragma surface surf Lambert alpha
 		//Use shader model 3.0 target, to get nicer looking lighting
 		#pragma target 3.0
 
@@ -32,6 +33,7 @@ Shader "Custom/WaterSurfaceShader"
 		sampler2D _MainTex;
 		half _Glossiness;
 		half _Metallic;
+		half _Transparency;
 		fixed4 _Color;
 		sampler2D _NoiseTex;
 
@@ -60,7 +62,7 @@ Shader "Custom/WaterSurfaceShader"
 			{
 				pos.y += (sin((_WaterTime * _WaterSpeed + waveType ) / _WaterDistance) * _WaterScale);
 				pos.y += (sin((_WaterTime * _WaterSpeed + waveType + pos.x) / _WaterDistance) * _WaterScale);
-				pos.y += (sin((_WaterTime * _WaterSpeed*2 + waveType * pos.x/5) / _WaterDistance) * _WaterScale)/3;
+				pos.y += (sin((_WaterTime * _WaterSpeed*2 + waveType * pos.x/5) / _WaterDistance) * _WaterScale)/2;
 				//TODO connect watercontroller with shader through Shader.SetGlobalBuffer
 				
 			}
@@ -94,10 +96,14 @@ Shader "Custom/WaterSurfaceShader"
 			//Metallic and smoothness come from slider variables
 			o.Metallic = _Metallic;
 			o.Smoothness = _Glossiness;
-			o.Alpha = c.a;
+			o.Alpha = _Transparency;
 		}
 		
 		ENDCG
 	}
 	FallBack "Diffuse"
+
+
+
+
 }
