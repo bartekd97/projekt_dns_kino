@@ -15,12 +15,12 @@ public class ShipControler : MonoBehaviour {
 	void FixedUpdate () {
         if (Input.GetKey(KeyCode.W)){ 
         
-            rb.AddRelativeForce(Vector3.forward * 1000);
+            rb.AddRelativeForce(Vector3.forward * 3000);
             Debug.Log("W");
         }
         if (Input.GetKey(KeyCode.S))
         {
-            rb.AddRelativeForce(Vector3.forward * -1000);
+            rb.AddRelativeForce(Vector3.forward * -3000);
             Debug.Log("S");
         }
         if (Input.GetKey(KeyCode.A))
