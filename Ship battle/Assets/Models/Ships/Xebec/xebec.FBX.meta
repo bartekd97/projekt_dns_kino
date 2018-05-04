@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: 7b217e4c63f95be4caa911a533aa2167
+timeCreated: 1524573267
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: anchor_beams_grain_t_0Geo_01
+    100002: baller
+    100004: baller01
+    100006: baller02
+    100008: baller03
+    100010: bowframe_grain_trim_0Geo_01
+    100012: cabin_facing_prim_0Geo_01
+    100014: fo_c_sle_deck_0Geo_01
+    100016: fore_halyard_metal_0Geo_01
+    100018: foreyard_wood_0Geo_01
+    100020: hull_cust_prim_0Geo_01
+    100022: hull_main_prim_0Geo_01
+    100024: hull_main_submerged_0Geo_01
+    100026: keel_grain_submerged_0Geo_01
+    100028: keel_grain_trim_0Geo_01
+    100030: longboat_cover_sails_0Geo_01
+    100032: longboat_grain_trim_0Geo_01
+    100034: longboat_hull_sec_0Geo_01
+    100036: main
+    100038: main_halyard_metal_0Geo_01
+    100040: mainyard_wood_0Geo_01
+    100042: mast2
+    100044: mast3
+    100046: mast6
+    100048: metal_0Geo_01
+    100050: mizzen_base
+    100052: mizzen_halyard_metal_0Geo_01
+    100054: mizzenmast_wood_0Geo_01
+    100056: mizzenyard_wood_0Geo_01
+    100058: parts1
+    100060: rudder_cableballer05s_wood_0Geo_01
+    100062: rudder_port_faces_cu_0Geo_01
+    100064: //RootNode
+    400000: anchor_beams_grain_t_0Geo_01
+    400002: baller
+    400004: baller01
+    400006: baller02
+    400008: baller03
+    400010: bowframe_grain_trim_0Geo_01
+    400012: cabin_facing_prim_0Geo_01
+    400014: fo_c_sle_deck_0Geo_01
+    400016: fore_halyard_metal_0Geo_01
+    400018: foreyard_wood_0Geo_01
+    400020: hull_cust_prim_0Geo_01
+    400022: hull_main_prim_0Geo_01
+    400024: hull_main_submerged_0Geo_01
+    400026: keel_grain_submerged_0Geo_01
+    400028: keel_grain_trim_0Geo_01
+    400030: longboat_cover_sails_0Geo_01
+    400032: longboat_grain_trim_0Geo_01
+    400034: longboat_hull_sec_0Geo_01
+    400036: main
+    400038: main_halyard_metal_0Geo_01
+    400040: mainyard_wood_0Geo_01
+    400042: mast2
+    400044: mast3
+    400046: mast6
+    400048: metal_0Geo_01
+    400050: mizzen_base
+    400052: mizzen_halyard_metal_0Geo_01
+    400054: mizzenmast_wood_0Geo_01
+    400056: mizzenyard_wood_0Geo_01
+    400058: parts1
+    400060: rudder_cableballer05s_wood_0Geo_01
+    400062: rudder_port_faces_cu_0Geo_01
+    400064: //RootNode
+    2100000: wood grain black
+    2100002: plank white
+    2100004: plank red sterm
+    2100006: custom rework
+    2100008: wood deck
+    2100010: wood grain blue
+    2100012: plank red
+    2100014: sails
+    2100016: AOP metal
+    2100018: 'Material #30'
+    2100020: AOP wood
+    2100022: wood grain white
+    2300000: anchor_beams_grain_t_0Geo_01
+    2300002: baller01
+    2300004: baller02
+    2300006: baller03
+    2300008: bowframe_grain_trim_0Geo_01
+    2300010: cabin_facing_prim_0Geo_01
+    2300012: fo_c_sle_deck_0Geo_01
+    2300014: fore_halyard_metal_0Geo_01
+    2300016: foreyard_wood_0Geo_01
+    2300018: hull_cust_prim_0Geo_01
+    2300020: hull_main_prim_0Geo_01
+    2300022: hull_main_submerged_0Geo_01
+    2300024: keel_grain_submerged_0Geo_01
+    2300026: keel_grain_trim_0Geo_01
+    2300028: longboat_cover_sails_0Geo_01
+    2300030: longboat_grain_trim_0Geo_01
+    2300032: longboat_hull_sec_0Geo_01
+    2300034: main_halyard_metal_0Geo_01
+    2300036: mainyard_wood_0Geo_01
+    2300038: mast2
+    2300040: mast3
+    2300042: mast6
+    2300044: metal_0Geo_01
+    2300046: mizzen_base
+    2300048: mizzen_halyard_metal_0Geo_01
+    2300050: mizzenmast_wood_0Geo_01
+    2300052: mizzenyard_wood_0Geo_01
+    2300054: rudder_cableballer05s_wood_0Geo_01
+    2300056: rudder_port_faces_cu_0Geo_01
+    3300000: anchor_beams_grain_t_0Geo_01
+    3300002: baller01
+    3300004: baller02
+    3300006: baller03
+    3300008: bowframe_grain_trim_0Geo_01
+    3300010: cabin_facing_prim_0Geo_01
+    3300012: fo_c_sle_deck_0Geo_01
+    3300014: fore_halyard_metal_0Geo_01
+    3300016: foreyard_wood_0Geo_01
+    3300018: hull_cust_prim_0Geo_01
+    3300020: hull_main_prim_0Geo_01
+    3300022: hull_main_submerged_0Geo_01
+    3300024: keel_grain_submerged_0Geo_01
+    3300026: keel_grain_trim_0Geo_01
+    3300028: longboat_cover_sails_0Geo_01
+    3300030: longboat_grain_trim_0Geo_01
+    3300032: longboat_hull_sec_0Geo_01
+    3300034: main_halyard_metal_0Geo_01
+    3300036: mainyard_wood_0Geo_01
+    3300038: mast2
+    3300040: mast3
+    3300042: mast6
+    3300044: metal_0Geo_01
+    3300046: mizzen_base
+    3300048: mizzen_halyard_metal_0Geo_01
+    3300050: mizzenmast_wood_0Geo_01
+    3300052: mizzenyard_wood_0Geo_01
+    3300054: rudder_cableballer05s_wood_0Geo_01
+    3300056: rudder_port_faces_cu_0Geo_01
+    4300000: keel_grain_trim_0Geo_01
+    4300002: keel_grain_submerged_0Geo_01
+    4300004: hull_main_submerged_0Geo_01
+    4300006: hull_main_prim_0Geo_01
+    4300008: hull_cust_prim_0Geo_01
+    4300010: fo_c_sle_deck_0Geo_01
+    4300012: cabin_facing_prim_0Geo_01
+    4300014: bowframe_grain_trim_0Geo_01
+    4300016: anchor_beams_grain_t_0Geo_01
+    4300018: rudder_port_faces_cu_0Geo_01
+    4300020: longboat_hull_sec_0Geo_01
+    4300022: longboat_grain_trim_0Geo_01
+    4300024: longboat_cover_sails_0Geo_01
+    4300026: metal_0Geo_01
+    4300028: mizzen_base
+    4300030: mast6
+    4300032: mast2
+    4300034: fore_halyard_metal_0Geo_01
+    4300036: mainyard_wood_0Geo_01
+    4300038: mast3
+    4300040: main_halyard_metal_0Geo_01
+    4300042: foreyard_wood_0Geo_01
+    4300044: mizzenmast_wood_0Geo_01
+    4300046: mizzen_halyard_metal_0Geo_01
+    4300048: mizzenyard_wood_0Geo_01
+    4300050: baller03
+    4300052: baller02
+    4300054: baller01
+    4300056: rudder_cableballer05s_wood_0Geo_01
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

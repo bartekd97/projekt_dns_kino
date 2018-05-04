@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShipPhysics : MonoBehaviour {
 
     public Ocean ocean;
+    public ShipControler shipControler;
     public Transform frontRightPoint;
     public Transform frontLeftPoint;
     public Transform backRightPoint;
@@ -45,6 +46,8 @@ public class ShipPhysics : MonoBehaviour {
         float rotZf = Mathf.Atan((frPos - flPos) / fDist) * Mathf.Rad2Deg;
         float rotZb = Mathf.Atan((brPos - blPos) / bDist) * Mathf.Rad2Deg;
         rotZ = (rotZf + rotZb) / 2f;
+        if (shipControler)
+            rotZ = rotZ + shipControler.rotationForce * 0.5f;
 
         Vector3 currentRotationVec = transform.rotation.eulerAngles;
         Vector3 toRotationVec = new Vector3(rotX, currentRotationVec.y, rotZ);

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ship battle", "Ship battle.csproj", "{2D405842-8F8C-06BF-A289-27E29AF282D3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ship battle.Plugins", "Ship battle.Plugins.csproj", "{BA5ADA00-5513-F900-A1AF-7929113AA192}"
