@@ -15,6 +15,9 @@ ModelImporter:
     400006: g2_group
     2100000: acmat_0
     2100002: acmat_1
+    2100004: g0Mat
+    2100006: g1_groupMat
+    2100008: g2_groupMat
     2300000: g0
     2300002: g1_group
     2300004: g2_group
@@ -29,7 +32,7 @@ ModelImporter:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0

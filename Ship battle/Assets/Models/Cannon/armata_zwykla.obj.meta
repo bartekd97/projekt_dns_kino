@@ -11,6 +11,7 @@ ModelImporter:
     400002: g0
     2100000: acmat_0
     2100002: acmat_1
+    2100004: g0Mat
     2300000: g0
     3300000: g0
     4300000: g0
@@ -19,7 +20,7 @@ ModelImporter:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
