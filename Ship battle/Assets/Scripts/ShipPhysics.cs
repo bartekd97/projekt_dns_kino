@@ -11,12 +11,19 @@ public class ShipPhysics : MonoBehaviour {
     public Transform backRightPoint;
     public Transform backLeftPoint;
 
+    public float MaxDrowingLevel = 20f;
+    private float drowingLevel = 0f;
+    private const float drowingSpeed = 0.2f;
+
     void Start () {
-		
+        if (ocean == null)
+            ocean = Ocean.LastOceanObject;
 	}
 	
 
 	void FixedUpdate () {
+        if (shipControler.ship.isDrowing)
+            drowingLevel = Mathf.Min(drowingLevel + Time.deltaTime * drowingSpeed, MaxDrowingLevel);
         Vector3 fronRightVec = frontRightPoint.position;
         Vector3 frontLeftVec = frontLeftPoint.position;
         Vector3 backRightVec = backRightPoint.position;
@@ -60,7 +67,7 @@ public class ShipPhysics : MonoBehaviour {
 
 
         // pozycja Y
-        float middlePos = ocean.GetWaterLevel(transform.position);
+        float middlePos = ocean.GetWaterLevel(transform.position) - drowingLevel;
         Vector3 shipPos = transform.position;
         shipPos.y = Mathf.Lerp(shipPos.y, middlePos, 0.1f);
         transform.position = shipPos;

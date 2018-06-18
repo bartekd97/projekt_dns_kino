@@ -14,10 +14,13 @@ public class ShipCamera : MonoBehaviour {
     public float smoothing = 0.25f;
 
 	void Start () {
-		
-	}
+        if (ocean == null)
+            ocean = Ocean.LastOceanObject;
+    }
 	
 	void FixedUpdate () {
+        if (camParent == null)
+            return;
         camParent.Rotate(Vector3.up * Input.GetAxis("Mouse X") * 2f);
 
         posY -= Input.GetAxis("Mouse Y");

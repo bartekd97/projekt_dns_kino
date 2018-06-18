@@ -22,8 +22,9 @@ public class OceanWave {
         //x * z produces a moving sea without rolling waves
 
         float waveType = z;
+        float waveTypeAdt = x;
 
-        y += Mathf.Sin((timeSinceStart * speed + waveType) / waveDistance) * scale;
+        y += Mathf.Sin((timeSinceStart * speed + waveType) / waveDistance) * Mathf.Cos((timeSinceStart * speed + waveTypeAdt) / waveDistance) * scale;
 
         //Add noise to make it more realistic
         //y += Mathf.PerlinNoise(x + noiseWalk, y + Mathf.Sin(timeSinceStart * 0.1f)) * noiseStrength;

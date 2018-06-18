@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShipMast : MonoBehaviour {
+public class ShipMast : MonoBehaviour
+{
     public enum ShipMastDirection
     {
         Forward,
@@ -17,7 +18,7 @@ public class ShipMast : MonoBehaviour {
 
     public float mastRotateSpeed = 10f;
 
-    private float toRotation;
+    public float toRotation;
     private ShipMastDirection currentDirection = ShipMastDirection.Forward;
 
 	void Start () {
@@ -82,5 +83,11 @@ public class ShipMast : MonoBehaviour {
     {
         foreach (SailScript ss in sails)
             ss.SetSailLevel(level);
+    }
+
+    public void SetSailDamageLevel(float dmg)
+    {
+        foreach (SailScript ss in sails)
+            ss.SetDamageLevel(dmg);
     }
 }

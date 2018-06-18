@@ -105,7 +105,7 @@ public class SailScript : MonoBehaviour {
 
     public void SetDamageLevel(float lvl)
     {
-        if (damageLevel == lvl)
+        if (damageLevel >= lvl)
             return;
 
         int maxHoles = 0;
@@ -153,6 +153,8 @@ public class SailScript : MonoBehaviour {
 
     public void SetSailOffset( float off )
     {
+        if (mainMaterial == null)
+            return;
         mainMaterial.SetFloat("_Offset", off);
     }
     public void SetSailLevel(float lvl)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Ocean : MonoBehaviour {
+    public static Ocean LastOceanObject;
 
     public float partSize = 10f;
     public int partSegments = 100;
@@ -27,6 +28,7 @@ public class Ocean : MonoBehaviour {
         CreateOceanPart();
 
         _startTime = Time.time;
+        LastOceanObject = this;
     }
 	
 	// Update is called once per frame
